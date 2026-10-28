@@ -7,25 +7,25 @@ cask "rigger" do
     end
   end
 
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     on_arm do
-      sha256 "9f6b4bd2108bb64ef3db6e14aac4d7ea6d95af7eddac3ca2684223a4a26c39ed"
+      sha256 "dceb30090028a846159d65bab83eb3bb352d140087b7580f399c9b9b3ceebba3"
       url "https://github.com/k0nsta/rigger/releases/download/v#{version}/rigger_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "092c3435927bd33a2bee7b2097371cd650af567691026b77d4812c7eb8c25547"
+      sha256 "e228e8b0471baf26a5a0c983cf34d1ac40e70d9996542cee5de706b0d39b5cd1"
       url "https://github.com/k0nsta/rigger/releases/download/v#{version}/rigger_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "e464a5eaee6aead16136b3aeb0d2ac15e76502a187a5e09b6be4ec837b2be5fe"
+      sha256 "7f90e374d848c68bd4102a3038e04f3a2f80727a3fc47901625c43f650575ab0"
       url "https://github.com/k0nsta/rigger/releases/download/v#{version}/rigger_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "86614801af96a078606a54e67af2f6a42f9d9e02631eea47b2c67b1d9c54ec76"
+      sha256 "3139df09bf756117254e22b5bc624b4d2fa5f0e0623b033d5bf895d082038f1c"
       url "https://github.com/k0nsta/rigger/releases/download/v#{version}/rigger_#{version}_linux_amd64.tar.gz"
     end
   end
