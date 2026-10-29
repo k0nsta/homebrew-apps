@@ -9,15 +9,15 @@ cask "agr" do
     end
   end
 
-  version "1.2.0"
+  version "1.3.0"
 
   on_macos do
     on_arm do
-      sha256 "5a42b5d0deabe5302b7168d8763e6213c4b208ff383178e27150f58d58c55250"
+      sha256 "aa7a2bca29cf8709de64dad90b46b53b5a4c1b5f60a34a9d86bfaee2148a802f"
       url "https://github.com/k0nsta/agterm-remote/releases/download/v#{version}/agr_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "bfb9118e7f5363bd591550cad8f42767b66a81d25035a2cfb1e4c30df7994d45"
+      sha256 "c53b4670e2ae3e12c7ab4a160b534a58b8d9f44eaa9efe000870c2809d6bd49e"
       url "https://github.com/k0nsta/agterm-remote/releases/download/v#{version}/agr_#{version}_darwin_amd64.tar.gz"
     end
   end
@@ -29,6 +29,7 @@ cask "agr" do
   livecheck do
     skip "Auto-generated on release."
   end
+  depends_on :macos
 
   binary "agr"
 
